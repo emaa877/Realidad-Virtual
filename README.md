@@ -19,7 +19,7 @@ Este proyecto consiste en el desarrollo de un **Entorno Virtual de Aprendizaje (
 
 Mediante una propuesta didáctica basada en la interacción y el juego, el usuario asume el rol de un personaje que debe recolectar objetos y completar desafíos técnicos, con el objetivo de afianzar conocimientos teóricos de forma práctica.
 
-El entorno fue desarrollado utilizando el motor Godot, el cual permite la creación de aplicaciones interactivas en 2D y 3D mediante una arquitectura basada en nodos y escenas, junto con el uso de lenguajes como GDScript, C# o C++ :contentReference[oaicite:0]{index=0}.
+El entorno fue desarrollado utilizando el motor Godot, el cual permite la creación de aplicaciones interactivas en 2D y 3D mediante una arquitectura basada en nodos y escenas, junto con el uso de lenguajes como GDScript y C++.
 
 ---
 
@@ -64,7 +64,7 @@ Este proyecto consiste en el desarrollo de un **Entorno Virtual de Aprendizaje (
 
 Mediante una propuesta didáctica basada en la interacción y el juego, el usuario asume el rol de un personaje que debe recolectar objetos y completar desafíos técnicos, con el objetivo de afianzar conocimientos teóricos de forma práctica.
 
-El entorno fue desarrollado utilizando el motor Godot, el cual permite la creación de aplicaciones interactivas en 2D y 3D mediante una arquitectura basada en nodos y escenas, junto con el uso de lenguajes como GDScript, C# o C++ :contentReference[oaicite:0]{index=0}.
+El entorno fue desarrollado utilizando el motor Godot, el cual permite la creación de aplicaciones interactivas en 2D y 3D mediante una arquitectura basada en nodos y escenas, junto con el uso de lenguajes como GDScript y C++.
 
 ---
 
