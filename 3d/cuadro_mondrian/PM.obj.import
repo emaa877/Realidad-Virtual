@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/PM.obj-9cab10a07970d46d953975cc16139341.mesh"
+
+[deps]
+
+files=[ "res://.import/PM.obj-9cab10a07970d46d953975cc16139341.mesh" ]
+
+source_file="res://3d/cuadro_mondrian/PM.obj"
+dest_files=[ "res://.import/PM.obj-9cab10a07970d46d953975cc16139341.mesh", "res://.import/PM.obj-9cab10a07970d46d953975cc16139341.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

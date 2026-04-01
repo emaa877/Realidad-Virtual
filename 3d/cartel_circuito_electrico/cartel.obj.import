@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cartel.obj-a20daa5520b35136736a8e417cfa9031.mesh"
+
+[deps]
+
+files=[ "res://.import/cartel.obj-a20daa5520b35136736a8e417cfa9031.mesh" ]
+
+source_file="res://3d/cartel_circuito_electrico/cartel.obj"
+dest_files=[ "res://.import/cartel.obj-a20daa5520b35136736a8e417cfa9031.mesh", "res://.import/cartel.obj-a20daa5520b35136736a8e417cfa9031.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

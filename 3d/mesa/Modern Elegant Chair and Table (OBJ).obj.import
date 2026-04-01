@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Modern Elegant Chair and Table (OBJ).obj-837b56cd86fa84e9211b1416199b3a16.mesh"
+
+[deps]
+
+files=[ "res://.import/Modern Elegant Chair and Table (OBJ).obj-837b56cd86fa84e9211b1416199b3a16.mesh" ]
+
+source_file="res://3d/mesa/Modern Elegant Chair and Table (OBJ).obj"
+dest_files=[ "res://.import/Modern Elegant Chair and Table (OBJ).obj-837b56cd86fa84e9211b1416199b3a16.mesh", "res://.import/Modern Elegant Chair and Table (OBJ).obj-837b56cd86fa84e9211b1416199b3a16.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

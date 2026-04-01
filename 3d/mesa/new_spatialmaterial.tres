@@ -1,0 +1,6 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://3d/mesa/oak_by_Andrw9727/alfa-komplet---buk_@_7f0697d29ec373b117b068fd36c29d12.jpg" type="Texture" id=1]
+
+[resource]
+albedo_texture = ExtResource( 1 )
