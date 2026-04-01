@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://textures/bamboo-wood-semigloss-albedo.png" type="Texture" id=1]
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 1 )
+uv1_triplanar = true
+
+[sub_resource type="CylinderMesh" id=1]
+material = SubResource( 5 )
+height = 0.05
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.152941, 0.152941, 0.152941, 1 )
+
+[sub_resource type="CylinderMesh" id=2]
+material = SubResource( 6 )
+top_radius = 0.08
+bottom_radius = 0.08
+height = 0.5
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.152941, 0.152941, 0.152941, 1 )
+
+[sub_resource type="CylinderShape" id=3]
+height = 0.0528861
+
+[sub_resource type="CylinderShape" id=4]
+radius = 0.361538
+height = 0.465247
+
+[node name="Spatial" type="RigidBody"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance3" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.338678, 0 )
+radius = 0.5
+radial_segments = 24
+rings = 24
+material = SubResource( 7 )
+
+[node name="CSGBox" type="CSGBox" parent="MeshInstance3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.110533, 0 )
+operation = 2
+height = 0.899637
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.501609, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.242908, 0 )
+shape = SubResource( 4 )

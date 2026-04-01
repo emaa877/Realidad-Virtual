@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=2]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.121569, 0.423529, 1, 1 )
+emission_enabled = true
+emission = Color( 0.121569, 0.423529, 1, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.227451, 0.294118, 0.423529, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.454902, 0.454902, 0.454902, 1 )
+
+[sub_resource type="CylinderShape" id=8]
+radius = 0.359546
+height = 0.990817
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.121569, 0.423529, 1, 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.121569, 0.423529, 1, 1 )
+
+[node name="RigidBody" type="RigidBody"]
+
+[node name="CSGCylinder" type="CSGCylinder" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+radius = 0.7
+height = 2.0
+sides = 34
+material = SubResource( 2 )
+
+[node name="CSGCylinder" type="CSGCylinder" parent="CSGCylinder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.38661, 0 )
+operation = 2
+radius = 0.68
+sides = 24
+material = SubResource( 5 )
+
+[node name="CSGCylinder2" type="CSGCylinder" parent="CSGCylinder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.179625, 0.844299, 0.408283 )
+radius = 0.1
+height = 0.2
+sides = 24
+material = SubResource( 6 )
+
+[node name="CSGCylinder3" type="CSGCylinder" parent="CSGCylinder"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.179625, 0.852777, 0.408283 )
+operation = 2
+radius = 0.07
+height = 0.2
+sides = 24
+material = SubResource( 7 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 8 )
+
+[node name="CSGTorus2" type="CSGTorus" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.25, 0 )
+inner_radius = 0.65
+outer_radius = 0.72
+sides = 64
+ring_sides = 3
+material = SubResource( 3 )
+
+[node name="CSGTorus3" type="CSGTorus" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.25, 0 )
+inner_radius = 0.65
+outer_radius = 0.72
+sides = 63
+material = SubResource( 4 )

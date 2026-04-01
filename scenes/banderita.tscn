@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.890196, 0.737255, 0.27451, 1 )
+
+[node name="banderita" type="CSGBox"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.237828, -0.433996 )
+width = 0.213742
+height = 0.494084
+depth = 0.816055
+material = SubResource( 4 )

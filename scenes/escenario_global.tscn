@@ -1,0 +1,304 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://scenes/puerta.tscn" type="PackedScene" id=1]
+[ext_resource path="res://mesh_paredes.meshlib" type="MeshLibrary" id=2]
+[ext_resource path="res://scenes/planta2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/planta1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/cajita.tscn" type="PackedScene" id=5]
+[ext_resource path="res://3d/cartel_circuito_electrico/cartel.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://scenes/sofa.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/bateria9v.tscn" type="PackedScene" id=8]
+[ext_resource path="res://3d/mesa/Modern Elegant Chair and Table (OBJ).obj" type="ArrayMesh" id=9]
+[ext_resource path="res://3d/mesa/oak_by_Andrw9727/alfa-komplet---buk_@_7f0697d29ec373b117b068fd36c29d12.jpg" type="Texture" id=10]
+[ext_resource path="res://3d/mesa/new_spatialmaterial.tres" type="Material" id=11]
+[ext_resource path="res://scenes/mesa_ratona.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/lata_aceite.tscn" type="PackedScene" id=13]
+[ext_resource path="res://3d/cartel_engranajes/cartel2.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://3d/cuadro_mondrian/PM.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://scenes/cuadros_varios.tscn" type="PackedScene" id=16]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.25098, 0.678431, 0.992157, 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.498039, 0.498039, 0.498039, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.25098, 0.678431, 0.992157, 1 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.498039, 0.498039, 0.498039, 1 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 0.25098, 0.678431, 0.992157, 1 )
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 0.498039, 0.498039, 0.498039, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.25098, 0.678431, 0.992157, 1 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.498039, 0.498039, 0.498039, 1 )
+
+[sub_resource type="BoxShape" id=12]
+extents = Vector3( 119.873, 32.7091, 135.423 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_color = Color( 0.847059, 0.847059, 0.847059, 1 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_color = Color( 0.847059, 0.847059, 0.847059, 1 )
+
+[node name="escenario" type="Spatial"]
+
+[node name="Muros" type="GridMap" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000448346, 0, -0.00254297 )
+mesh_library = ExtResource( 2 )
+cell_size = Vector3( 0.2, 2.5, 0.2 )
+data = {
+"cells": PoolIntArray( 10, 1, 1048576, 34, 3, 1441792, 99, 3, 1441792, 65436, 3, 1441792, 10, 6, 1048576, 34, 8, 1441792, 99, 8, 1441792, 65436, 8, 1441792, 10, 11, 1048576, 34, 13, 1441792, 99, 13, 1441792, 65436, 13, 1441792, 10, 16, 1048576, 34, 18, 1441792, 99, 18, 1441792, 65436, 18, 1441792, 10, 21, 1048576, 34, 23, 1441792, 99, 23, 1441792, 65436, 23, 1441792, 10, 26, 1048576, 36, 26, 655360, 41, 26, 655360, 46, 26, 655360, 51, 26, 655360, 56, 26, 655360, 61, 26, 655360, 71, 26, 655360, 76, 26, 655360, 81, 26, 655360, 86, 26, 655360, 91, 26, 655360, 96, 26, 655360, 99, 28, 1441792, 65436, 28, 1441792, 10, 31, 1048576, 99, 33, 1441792, 65436, 33, 1441792, 99, 38, 1441792, 65436, 38, 1441792, 10, 41, 1441792, 99, 43, 1441792, 65436, 43, 1441792, 10, 46, 1048576, 99, 48, 1441792, 65436, 48, 1441792, 10, 51, 1048576, 36, 51, 0, 41, 51, 0, 46, 51, 0, 56, 51, 0, 61, 51, 0, 66, 51, 0, 71, 51, 0, 76, 51, 0, 81, 51, 0, 86, 51, 0, 91, 51, 0, 96, 51, 0, 33, 53, 1441792, 99, 53, 1441792, 65436, 53, 1441792, 10, 56, 1048576, 33, 58, 1441792, 99, 58, 1441792, 65436, 58, 1441792, 10, 61, 1048576, 33, 63, 1441792, 99, 63, 1441792, 65436, 63, 1441792, 10, 66, 1048576, 33, 68, 1441792, 99, 68, 1441792, 65436, 68, 1441792, 10, 71, 1048576, 33, 73, 1441792, 99, 73, 1441792, 65436, 73, 1441792, 3, 74, 0, 8, 74, 0, 65439, 74, 0, 65444, 74, 0, 65449, 74, 0, 65454, 74, 0, 65459, 74, 0, 65464, 74, 0, 65469, 74, 0, 65474, 74, 0, 65479, 74, 0, 65484, 74, 0, 65489, 74, 0, 65494, 74, 0, 65499, 74, 0, 65504, 74, 0, 65509, 74, 0, 65514, 74, 0, 65519, 74, 0, 65524, 74, 0, 65529, 74, 0, 65534, 74, 0, 33, 78, 1441792, 99, 78, 1441792, 65436, 78, 1441792, 33, 83, 1441792, 99, 83, 1441792, 65436, 83, 1048576, 33, 88, 1441792, 99, 88, 1441792, 65436, 88, 1048576, 33, 93, 1441792, 99, 93, 1441792, 65436, 93, 1048576, 2, 96, 655360, 7, 96, 655360, 12, 96, 655360, 17, 96, 655360, 22, 96, 655360, 27, 96, 655360, 32, 96, 655360, 37, 96, 655360, 42, 96, 655360, 47, 96, 655360, 52, 96, 655360, 57, 96, 655360, 62, 96, 655360, 67, 96, 655360, 72, 96, 655360, 77, 96, 655360, 82, 96, 655360, 87, 96, 655360, 92, 96, 655360, 97, 96, 655360, 65438, 96, 655360, 65443, 96, 655360, 65448, 96, 655360, 65453, 96, 655360, 65458, 96, 655360, 65463, 96, 655360, 65468, 96, 655360, 65473, 96, 655360, 65478, 96, 655360, 65483, 96, 655360, 65488, 96, 655360, 65493, 96, 655360, 65498, 96, 655360, 65503, 96, 655360, 65508, 96, 655360, 65513, 96, 655360, 65518, 96, 655360, 65523, 96, 655360, 65528, 96, 655360, 65533, 96, 655360, 2, 65436, 0, 7, 65436, 0, 12, 65436, 0, 17, 65436, 0, 22, 65436, 0, 27, 65436, 0, 32, 65436, 0, 37, 65436, 0, 42, 65436, 0, 47, 65436, 0, 52, 65436, 0, 57, 65436, 0, 62, 65436, 0, 67, 65436, 0, 72, 65436, 0, 77, 65436, 0, 82, 65436, 0, 87, 65436, 0, 92, 65436, 0, 97, 65436, 0, 65438, 65436, 0, 65443, 65436, 0, 65448, 65436, 0, 65453, 65436, 0, 65458, 65436, 0, 65463, 65436, 0, 65468, 65436, 0, 65473, 65436, 0, 65478, 65436, 0, 65483, 65436, 0, 65488, 65436, 0, 65493, 65436, 0, 65498, 65436, 0, 65503, 65436, 0, 65508, 65436, 0, 65513, 65436, 0, 65518, 65436, 0, 65523, 65436, 0, 65528, 65436, 0, 65533, 65436, 0, 10, 65439, 1048576, 34, 65439, 1441792, 99, 65439, 1441792, 65436, 65439, 1441792, 10, 65444, 1048576, 34, 65444, 1441792, 99, 65444, 1441792, 65436, 65444, 1441792, 10, 65449, 1048576, 34, 65449, 1441792, 99, 65449, 1441792, 65436, 65449, 1441792, 10, 65454, 1048576, 34, 65454, 1441792, 99, 65454, 1441792, 65436, 65454, 1441792, 10, 65459, 1441792, 34, 65459, 1441792, 99, 65459, 1441792, 65436, 65459, 1441792, 34, 65464, 1441792, 99, 65464, 1441792, 65436, 65464, 1441792, 10, 65469, 1048576, 34, 65469, 1441792, 99, 65469, 1441792, 65436, 65469, 1441792, 10, 65474, 1048576, 34, 65474, 1441792, 99, 65474, 1441792, 65436, 65474, 1441792, 10, 65479, 1048576, 34, 65479, 1441792, 99, 65479, 1441792, 65436, 65479, 1441792, 10, 65484, 1048576, 34, 65484, 1441792, 99, 65484, 1441792, 65436, 65484, 1441792, 3, 65487, 655360, 8, 65487, 655360, 65439, 65487, 655360, 65444, 65487, 655360, 65449, 65487, 655360, 65454, 65487, 655360, 65459, 65487, 655360, 65464, 65487, 655360, 65469, 65487, 655360, 65474, 65487, 655360, 65479, 65487, 655360, 65489, 65487, 655360, 65494, 65487, 655360, 65499, 65487, 655360, 65504, 65487, 655360, 65509, 65487, 655360, 65514, 65487, 655360, 65519, 65487, 655360, 65524, 65487, 655360, 65529, 65487, 655360, 65534, 65487, 655360, 34, 65489, 1441792, 99, 65489, 1441792, 65436, 65489, 1441792, 34, 65494, 1441792, 99, 65494, 1441792, 65436, 65494, 1441792, 99, 65499, 1441792, 65436, 65499, 1441792, 34, 65504, 1441792, 99, 65504, 1441792, 65436, 65504, 1441792, 3, 65509, 655360, 8, 65509, 655360, 34, 65509, 1441792, 99, 65509, 1441792, 65436, 65509, 1441792, 65439, 65509, 655360, 65444, 65509, 655360, 65449, 65509, 655360, 65454, 65509, 655360, 65459, 65509, 655360, 65464, 65509, 655360, 65469, 65509, 655360, 65474, 65509, 655360, 65479, 65509, 655360, 65484, 65509, 655360, 65489, 65509, 655360, 65494, 65509, 655360, 65504, 65509, 655360, 65509, 65509, 655360, 65514, 65509, 655360, 65519, 65509, 655360, 65524, 65509, 655360, 65529, 65509, 655360, 65534, 65509, 655360, 10, 65512, 1048576, 34, 65514, 1441792, 99, 65514, 1441792, 65436, 65514, 1441792, 10, 65517, 1048576, 34, 65519, 1441792, 99, 65519, 1441792, 65436, 65519, 1441792, 10, 65522, 1048576, 34, 65524, 1441792, 99, 65524, 1441792, 65436, 65524, 1441792, 10, 65527, 1048576, 34, 65529, 1441792, 99, 65529, 1441792, 65436, 65529, 1441792, 10, 65532, 1048576, 34, 65534, 1441792, 99, 65534, 1441792, 65436, 65534, 1441792 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="Puertas" type="Spatial" parent="."]
+
+[node name="Puerta1" parent="Puertas" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8, 0, -9.702 )
+
+[node name="Puerta2" parent="Puertas" instance=ExtResource( 1 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 2.1, 0, -13.8 )
+
+[node name="Puerta3" parent="Puertas" instance=ExtResource( 1 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 2.1, 0, 7.8 )
+
+[node name="Puerta4" parent="Puertas" instance=ExtResource( 1 )]
+transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 6.9, 0, -7.8 )
+
+[node name="Puerta5" parent="Puertas" instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -6.8, 0, -5.3 )
+
+[node name="Puerta6" parent="Puertas" instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 10.8, 0, 10.3 )
+
+[node name="Puerta7" parent="Puertas" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8, 0, 5.3 )
+
+[node name="Plantas" type="Spatial" parent="."]
+
+[node name="planta1" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.983, 0, 5.78 )
+
+[node name="planta2" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 0.956013, 0, 0.293323, 0, 1, 0, -0.293323, 0, 0.956013, -8.94586, 0, -9.13274 )
+
+[node name="planta3" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.31552, 0, -5.63218 )
+
+[node name="planta4" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.77974, 0, 9.07296 )
+
+[node name="planta5" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 0.877791, 0, -0.479044, 0, 1, 0, 0.479044, 0, 0.877791, 0.371363, 0, 18.7756 )
+
+[node name="planta6" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 0.932425, 0, 0.361364, 0, 1, 0, -0.361364, 0, 0.932425, -2.25213, 0, -5.90814 )
+
+[node name="planta7" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 0.960861, 0, 0.27703, 0, 1, 0, -0.27703, 0, 0.960861, 6.0257, 0, -12.3621 )
+
+[node name="planta8" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 0.852275, 0, 0.523094, 0, 1, 0, -0.523094, 0, 0.852275, -0.437, 0, 18.4808 )
+
+[node name="planta9" parent="Plantas" instance=ExtResource( 3 )]
+transform = Transform( 0.17826, 0, 0.090683, 0, 0.2, 0, -0.090683, 0, 0.17826, 3.09894, 0, -15.7379 )
+
+[node name="planta10" parent="Plantas" instance=ExtResource( 3 )]
+transform = Transform( 0.17826, 0, 0.090683, 0, 0.2, 0, -0.090683, 0, 0.17826, -8.97834, 0, -6.08107 )
+
+[node name="planta11" parent="Plantas" instance=ExtResource( 3 )]
+transform = Transform( 0.17826, 0, 0.090683, 0, 0.2, 0, -0.090683, 0, 0.17826, 1.69151, 0, -9.04019 )
+
+[node name="planta12" parent="Plantas" instance=ExtResource( 3 )]
+transform = Transform( 0.17826, 0, 0.090683, 0, 0.2, 0, -0.090683, 0, 0.17826, 12.6376, 0, 9.47652 )
+
+[node name="planta13" parent="Plantas" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0122, 0, 1.663 )
+
+[node name="planta14" parent="Plantas" instance=ExtResource( 3 )]
+transform = Transform( 0.17826, 0, 0.090683, 0, 0.2, 0, -0.090683, 0, 0.17826, -6.72192, 0, -11.2326 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 1.62921e-07, -1.62921e-07, 2.65431e-14, 1, 0, -1, 2.65432e-14, 2.9432, 9.2031, 0 )
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( -1.62921e-07, -1, 0, -1.62921e-07, 2.65431e-14, -1, 1, -1.62921e-07, -1.62921e-07, 2.9432, -1.78824, 0 )
+
+[node name="cajas" type="Spatial" parent="."]
+
+[node name="cajita1" parent="cajas" instance=ExtResource( 5 )]
+transform = Transform( 0.0139033, 0.00563002, 2.46096e-10, 0, -6.55671e-10, 0.015, 0.00563002, -0.0139033, -6.07734e-10, 9.59649, 0.0411825, 7.8412 )
+
+[node name="cajita2" parent="cajas" instance=ExtResource( 5 )]
+transform = Transform( 0.0134511, 0.00663832, 1.08152e-09, 0, -2.44381e-09, 0.015, 0.00663832, -0.0134511, -2.19147e-09, -4.72506, 0.0337782, -8.41114 )
+
+[node name="cajita3" parent="cajas" instance=ExtResource( 5 )]
+transform = Transform( 0.012895, -0.00766287, -1.24844e-09, 0, -2.44381e-09, 0.015, -0.00766287, -0.012895, -2.10086e-09, 4.023, 0.0411825, 13.9792 )
+
+[node name="cajita4" parent="cajas" instance=ExtResource( 5 )]
+transform = Transform( 0.0135946, -0.00633927, -1.0328e-09, 0, -2.44381e-09, 0.015, -0.00633927, -0.0135946, -2.21484e-09, 3.28434, 0.0411825, -10.3968 )
+
+[node name="cajita5" parent="cajas" instance=ExtResource( 5 )]
+transform = Transform( 0.015, 0, 0, 0, -6.55671e-10, 0.015, 0, -0.015, -6.55671e-10, 5.6773, 0.0411825, 15.3622 )
+
+[node name="cajita6" parent="cajas" instance=ExtResource( 5 )]
+transform = Transform( 0.0124556, 0.00835813, 3.65346e-10, 0, -6.55671e-10, 0.015, 0.00835813, -0.0124556, -5.44451e-10, 3.48816, 0.0411825, 1.71282 )
+
+[node name="cajita7" parent="cajas" instance=ExtResource( 5 )]
+transform = Transform( 0.015, 0, 0, 0, -6.55671e-10, 0.015, 0, -0.015, -6.55671e-10, -10.7485, 0.0411825, 18.5717 )
+
+[node name="sillones" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0 )
+
+[node name="sofa" parent="sillones" instance=ExtResource( 7 )]
+transform = Transform( 1.37345, 0, -1.16345, 0, 1.8, 0, 1.16345, 0, 1.37345, -1.174, 0, -1.02347 )
+
+[node name="sofa2" parent="sillones" instance=ExtResource( 7 )]
+transform = Transform( -1.79998, 0, -0.00920429, 0, 1.8, 0, 0.00920429, 0, -1.79998, 15.2741, 0, 18.0377 )
+
+[node name="sofa3" parent="sillones" instance=ExtResource( 7 )]
+transform = Transform( -0.0083885, 0, -1.79998, 0, 1.8, 0, 1.79998, 0, -0.0083885, 15.6102, 0, -1.06265 )
+
+[node name="sofa4" parent="sillones" instance=ExtResource( 7 )]
+transform = Transform( -0.0359052, 0, 1.79964, 0, 1.8, 0, -1.79964, 0, -0.0359052, 9.84927, 0, -1.08934 )
+
+[node name="sofa5" parent="sillones" instance=ExtResource( 7 )]
+transform = Transform( 1.7999, 0, 0.0187854, 0, 1.8, 0, -0.0187854, 0, 1.7999, -2.83756, 0, -17.807 )
+
+[node name="baterias" type="Spatial" parent="."]
+
+[node name="bateria1" parent="baterias" instance=ExtResource( 8 )]
+transform = Transform( 0.602804, 0, -0.797889, 0, 1, 0, 0.797889, 0, 0.602804, -1.064, 0.5, 4.097 )
+
+[node name="bateria6" parent="baterias" instance=ExtResource( 8 )]
+transform = Transform( -0.649169, 0.281813, -0.706513, 0, 0.928835, 0.370493, 0.760644, 0.240512, -0.602972, -2.88895, 0.466829, -2.26851 )
+
+[node name="bateria2" parent="baterias" instance=ExtResource( 8 )]
+transform = Transform( 0.947423, -0.319985, 5.21321e-08, 0, -1.62921e-07, -1, 0.319985, 0.947423, -1.54355e-07, -7.19444, 0.2316, 2.15078 )
+
+[node name="bateria3" parent="baterias" instance=ExtResource( 8 )]
+transform = Transform( 0.827002, 0, 0.562199, 0, 1, 0, -0.562199, 0, 0.827002, -1.064, 0.5, -10.944 )
+
+[node name="bateria4" parent="baterias" instance=ExtResource( 8 )]
+transform = Transform( -0.314075, -0.833103, -0.455298, 0, 0.479565, -0.877506, 0.949398, -0.275603, -0.150619, -6.61557, 0.386978, 2.40239 )
+
+[node name="bateria5" parent="baterias" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 15.3638, 0.209246, -6.46911 )
+
+[node name="mesa_con_sillas" type="MeshInstance" parent="."]
+transform = Transform( -6.99876e-05, 0, -0.00999976, 0, 0.01, 0, 0.00999976, 0, -6.99876e-05, -15.4298, -0.0997562, -14.2076 )
+mesh = ExtResource( 9 )
+material/0 = ExtResource( 11 )
+material/1 = ExtResource( 11 )
+material/2 = ExtResource( 11 )
+material/3 = ExtResource( 11 )
+material/4 = ExtResource( 11 )
+material/5 = ExtResource( 11 )
+material/6 = ExtResource( 11 )
+material/7 = ExtResource( 11 )
+material/8 = SubResource( 1 )
+material/9 = ExtResource( 11 )
+material/10 = ExtResource( 11 )
+material/11 = ExtResource( 11 )
+material/12 = SubResource( 2 )
+material/13 = ExtResource( 11 )
+material/14 = ExtResource( 11 )
+material/15 = ExtResource( 11 )
+material/16 = SubResource( 3 )
+material/17 = SubResource( 4 )
+material/18 = SubResource( 5 )
+material/19 = SubResource( 6 )
+material/20 = SubResource( 7 )
+material/21 = SubResource( 8 )
+material/22 = SubResource( 9 )
+material/23 = SubResource( 10 )
+material/24 = SubResource( 11 )
+
+[node name="StaticBody" type="StaticBody" parent="mesa_con_sillas"]
+
+[node name="CollisionShape" type="CollisionShape" parent="mesa_con_sillas/StaticBody"]
+transform = Transform( 1, 0, -9.31323e-10, 0, 0.999999, 0, 9.31323e-10, 0, 1, -0.946777, 66.7935, -0.000244141 )
+shape = SubResource( 12 )
+
+[node name="mesa_ratona1" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8884, 0, -1.10592 )
+
+[node name="mesa_ratona2" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69287, 0, 16.3587 )
+
+[node name="latas" type="Spatial" parent="."]
+
+[node name="lata1" parent="latas" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1655, 0.5, -10.49 )
+
+[node name="lata2" parent="latas" instance=ExtResource( 13 )]
+transform = Transform( 0.925329, 0, -0.379166, 0, 1, 0, 0.379166, 0, 0.925329, 15.3595, 0.5, -11.038 )
+
+[node name="lata3" parent="latas" instance=ExtResource( 13 )]
+transform = Transform( 0.790754, 0.612134, -2.67572e-08, 0, -4.37114e-08, -1, -0.612134, 0.790754, -3.45649e-08, 8.89787, 0.35, -9.19635 )
+
+[node name="lata4" parent="latas" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.097, 0.5, 13.944 )
+
+[node name="cartel1" type="MeshInstance" parent="."]
+transform = Transform( -8.14603e-08, 0.5, 0, -0.5, -8.14603e-08, 0, 0, 0, 0.5, 2.27073, 1.34648, 4.2452 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 13 )
+material/1 = SubResource( 14 )
+material/2 = SubResource( 15 )
+
+[node name="cartel2" type="MeshInstance" parent="."]
+transform = Transform( 8.14603e-08, -0.5, -1.62921e-07, -0.5, -8.14603e-08, 0, -2.65431e-14, 1.62921e-07, -0.5, 6.72816, 1.42598, -3.9548 )
+mesh = ExtResource( 14 )
+material/0 = SubResource( 16 )
+material/1 = SubResource( 17 )
+material/2 = SubResource( 18 )
+
+[node name="cuadro" type="MeshInstance" parent="."]
+transform = Transform( -2.5, 0, -9.73536e-07, 0, 2.5, 0, 9.73536e-07, 0, -2.5, 19.7942, 1.40382, 7.58104 )
+mesh = ExtResource( 15 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="cuadros_varios" parent="." instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.40649, 0.587, -9.55 )

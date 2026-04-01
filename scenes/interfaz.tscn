@@ -1,0 +1,257 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scripts/interfaz.gd" type="Script" id=1]
+[ext_resource path="res://fonts/SourceCodePro-MediumItalic.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://sprites/estrella_vacia.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 2 )
+
+[node name="Interfaz" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="abrir" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.6731
+margin_top = -31.6674
+margin_right = 88.3269
+margin_bottom = 33.3326
+color = Color( 0, 0, 0, 0.313726 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="abrir"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -47.5
+margin_top = -20.5
+margin_right = 47.5
+margin_bottom = 20.5
+custom_fonts/font = SubResource( 1 )
+text = "Abrir"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="agarrar" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.6731
+margin_top = 45.3326
+margin_right = 88.3269
+margin_bottom = 110.333
+color = Color( 0, 0, 0, 0.313726 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="agarrar"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -66.5
+margin_top = -20.5
+margin_right = 66.5
+margin_bottom = 20.5
+custom_fonts/font = SubResource( 1 )
+text = "Agarrar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dejar" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.6731
+margin_top = 45.3326
+margin_right = 88.3269
+margin_bottom = 110.333
+color = Color( 0, 0, 0, 0.313726 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="dejar"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -47.5
+margin_top = -20.5
+margin_right = 47.5
+margin_bottom = 20.5
+custom_fonts/font = SubResource( 1 )
+text = "Dejar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quitar" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.6731
+margin_top = 45.3326
+margin_right = 88.3269
+margin_bottom = 110.333
+color = Color( 0, 0, 0, 0.313726 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="quitar"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -57.0
+margin_top = -20.5
+margin_right = 57.0
+margin_bottom = 20.5
+custom_fonts/font = SubResource( 1 )
+text = "Quitar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="advertencia" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -167.0
+margin_top = 57.0
+margin_right = 167.0
+margin_bottom = 99.0
+size_flags_horizontal = 5
+color = Color( 0, 0, 0, 0.313726 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="advertencia"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -160.5
+margin_top = -20.5
+margin_right = 160.5
+margin_bottom = 20.5
+custom_fonts/font = SubResource( 1 )
+text = "Sin resistencias"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="inventario" type="Label" parent="."]
+margin_left = 830.0
+margin_top = 35.0
+margin_right = 1024.0
+margin_bottom = 83.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="objetivo" type="Label" parent="."]
+margin_left = 30.0
+margin_top = 500.0
+margin_right = 400.0
+margin_bottom = 570.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Objetivo:
+* Juntar 3 resistencias y 3 engranajes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="estrella1" type="Sprite" parent="."]
+position = Vector2( 23, 23 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+
+[node name="estrella2" type="Sprite" parent="."]
+position = Vector2( 68, 23 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+
+[node name="estrella3" type="Sprite" parent="."]
+position = Vector2( 113, 23 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+
+[node name="estrella4" type="Sprite" parent="."]
+position = Vector2( 158, 23 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 3 )
+
+[node name="joystick_mje" type="Label" parent="."]
+margin_left = 741.048
+margin_top = 469.519
+margin_right = 1029.05
+margin_bottom = 611.519
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Joystick:
+Analogico 1, direccion X
+Analogico 2, direccion Y
+Boton 1
+Boton 2"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="teclado_mje" type="Label" parent="."]
+margin_left = 804.688
+margin_top = 345.068
+margin_right = 972.688
+margin_bottom = 458.068
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Teclado:
+WASD - Flechas
+Tecla G
+Tecla H"
+align = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 40.0
+one_shot = true
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
